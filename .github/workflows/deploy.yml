@@ -64,3 +64,5 @@ jobs:
           service: ${{secrets.AWS_ECS_SERVICE_NAME}}
           cluster: ${{secrets.AWS_ECS_CLUSTER_NAME}}
           wait-for-service-stability: true
+
+          
