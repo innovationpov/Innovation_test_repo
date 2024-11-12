@@ -3,8 +3,8 @@ name: Push image to Amazon ECR and deploy to ECS
 on:
   push:
     branches:
-      #- main
-      - master
+      - main
+      #- master
 
 jobs:
   deploy:
@@ -64,5 +64,4 @@ jobs:
           service: ${{secrets.AWS_ECS_SERVICE_NAME}}
           cluster: ${{secrets.AWS_ECS_CLUSTER_NAME}}
           wait-for-service-stability: true
-
           
